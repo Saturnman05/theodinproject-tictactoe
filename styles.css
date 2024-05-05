@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Ajusta el tamaño de las columnas según sea necesario */
+    grid-gap: 10px; /* Espacio entre botones */
+}
+
+.cell {
+    width: 100px; /* Ancho del botón */
+    height: 100px; /* Alto del botón */
+    border: none;
+    background-color: #ccc; /* Color de fondo */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.cell:hover {
+    background-color: #ddd; /* Color de fondo al pasar el cursor */
+}
